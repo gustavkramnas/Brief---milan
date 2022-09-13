@@ -1,0 +1,179 @@
+.body {
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+/*--sidebar and wrapper--*/
+
+.wrapper {
+  background-color: white;
+  padding: 10px;
+}
+
+.sidebar {
+  background-color: red;
+  text-decoration: pointer;
+  border: solid 2.5px black;
+  height: 550px;
+  position: relative;
+  margin: 0 10px 0 10px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  margin: 0 30% 0 30%;
+}
+/* Just used for position sake, I don't like it here but i could not figure out were else*/
+
+.categories {
+  text-align: center;
+  text-decoration: pointer;
+}
+
+.category:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  text-decoration: underline;
+  cursor: pointer;
+  left: 15px;
+}
+
+/*--main section and wrapper--*/
+
+.col {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.col img {
+  width: calc(100% - 30px);
+  margin: 10px;
+}
+
+.p {
+  padding-right: 25px;
+  text-align: left;
+  font-size: 90%;
+}
+
+.heading {
+  padding-top: 15px;
+  margin: 0 auto;
+  display: block;
+  font-weight: bold;
+}
+.heading-container {
+  width: 100%;
+}
+
+.heading-content {
+  text-align: center;
+  width: 70%;
+}
+
+.col-1 {
+  min-width: 300px;
+  flex: 1;
+  padding-top: 25px;
+}
+
+.image,
+.image-1,
+.image-2 {
+  border: 2px black solid;
+}
+
+.image-4 {
+  float: right;
+  width: 250px;
+  margin: 15px 15px 15px 5px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4 {
+  font-size: 90%;
+  font-weight: 300;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.compress-text {
+  margin: 0 0 0 60px;
+}
+
+.quotes-grid {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quotes-grid-column {
+  width: 30%;
+  padding: 0 0.5rem;
+}
+
+.quote {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 10px 5px 5px 0 rgba(25, 24, 25, 0.2);
+  background: transparent;
+  box-sizing: border-box;
+  background-color: hsl(46, 35%, 93%);
+  cursor: pointer;
+  border: black 1px solid;
+}
+
+/*--footer--*/
+
+.footer {
+  text-align: center;
+  width: 100%;
+  padding: 0 auto;
+  font-weight: bold;
+}
+
+/*--media queries--*/
+@media only screen and (min-width: 768px) {
+  .col-row {
+    display: flex;
+  }
+
+  .logo {
+    display: block;
+    width: 300px;
+  }
+
+  .sidebar {
+    background-color: red;
+    border: solid 2.5px black;
+    width: 300px;
+    float: left;
+  }
+  .main-content {
+    margin-left: 0px;
+  }
+
+  .wrapper {
+    background-color: hwb(0 48% 15%);
+  }
+
+  .col img {
+    opacity: 0.8;
+  }
+
+  .col img:hover {
+    opacity: 1;
+  }
+}
